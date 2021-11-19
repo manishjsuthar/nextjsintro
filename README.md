@@ -1,34 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Next js
 
-## Getting Started
+its a react framework
 
-First, run the development server:
+react is library of javascript whereas next js is framework of react
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+library mean in which you have to install things you need for example you use react-router-dom for that you have to first install it whereas framework mean everything is already provided inside the package like having inbuilt feature you don’t need to install from outside
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+why next.js
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. its seo efficiency
+2. super fast, easy to scan and great user experience
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Installing:-
+npx create-next-app appname
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Routing
+to make more pages in next js just simply make new file with .js extension in pages folder (for example about.js)
+in next js index.js is the first “/“ page
 
-## Learn More
+to include boostrap you have to install by npm install bootstrap and then include it in \_app.js (import "bootstrap/dist/css/bootstrap.min.css”;)
 
-To learn more about Next.js, take a look at the following resources:
+there are three way to include css
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. inside styles/globals.css
+2. for separate for your page then you have to yourpagename.module.css (for example Home.module.css) this is important and it must be inside the styles folder and then include your page (import styles from ../../styles.yourpagename.module.css)
